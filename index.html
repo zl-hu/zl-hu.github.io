@@ -63,8 +63,7 @@
       color: var(--muted);
       font-size: 11px;
       font-weight: 400;
-      letter-spacing: .1em;
-      text-transform: uppercase;
+      letter-spacing: .02em;
     }
     .interests {
       display: grid;
@@ -90,6 +89,7 @@
       line-height: 1.5;
       text-wrap: pretty;
     }
+    article + article { margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--rule); }
     .authors { margin: 0 0 4px; font-size: 14px; }
     .venue { margin: 0; color: var(--muted); font-size: 14px; }
     .publication-meta { margin: 1px 0 0; color: var(--muted); font-size: 13px; }
@@ -152,7 +152,17 @@
     </section>
 
     <section aria-labelledby="publications-heading">
-      <h2 id="publications-heading">论文<span class="heading-en" lang="en">Publications</span></h2>
+      <h2 id="publications-heading">论文与预印本<span class="heading-en" lang="en">Publications &amp; preprints</span></h2>
+      <article>
+        <h3 lang="en">Low-Rank Tensor Completion using Tensor Train Decomposition via Riemannian Optimization on the Quotient Geometry</h3>
+        <p class="authors" lang="en">Zhenlong Hu, Zhongming Chen, Defeng Sun, and Liping Zhang</p>
+        <p class="venue" lang="en"><cite>arXiv preprint</cite></p>
+        <p class="publication-meta" lang="en">arXiv:2606.30173 · 2026</p>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.30173" rel="noreferrer">论文 / Paper <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
       <article>
         <h3 lang="en">Proximal Alternating Linearized Minimization Algorithm for Sparse Tensor Train Decomposition</h3>
         <p class="authors" lang="en">Zhenlong Hu and Zhongming Chen</p>
