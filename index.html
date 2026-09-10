@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Shannon 的个人主页。研究兴趣：机器学习、张量计算、流形优化。">
+  <title>Shannon · 个人主页</title>
+  <style>
+    :root {
+      --paper: #fcfcfa;
+      --ink: #202926;
+      --muted: #69716d;
+      --rule: #dce2dc;
+      --accent: #315b48;
+    }
+    * { box-sizing: border-box; }
+    html { color-scheme: light; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      width: min(100% - 56px, 780px);
+      margin: 0 auto;
+      padding: 82px 0 86px;
+    }
+    header { padding-bottom: 44px; }
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(56px, 9vw, 76px);
+      font-weight: 400;
+      letter-spacing: -.045em;
+      line-height: 1.08;
+    }
+    section {
+      border-top: 1px solid var(--rule);
+      padding: 29px 0 36px;
+    }
+    section:last-child { padding-bottom: 0; }
+    h2 {
+      margin: 0 0 24px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+    .heading-en {
+      margin-left: 12px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .interests {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .interest-zh { display: block; font-size: 19px; }
+    .interest-en {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    h3 {
+      max-width: 730px;
+      margin: 0 0 12px;
+      font-size: clamp(20px, 3vw, 23px);
+      font-weight: 500;
+      letter-spacing: -.02em;
+      line-height: 1.5;
+      text-wrap: pretty;
+    }
+    .authors { margin: 0 0 4px; font-size: 14px; }
+    .venue { margin: 0; color: var(--muted); font-size: 14px; }
+    .publication-meta { margin: 1px 0 0; color: var(--muted); font-size: 13px; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 44px;
+      padding: 7px 15px;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      color: var(--accent);
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .links a:hover { border-color: var(--accent); background: #f1f5ef; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    @media (max-width: 560px) {
+      main { width: calc(100% - 40px); padding-top: 48px; padding-bottom: 54px; }
+      header { padding-bottom: 32px; }
+      section { padding-top: 25px; padding-bottom: 28px; }
+      .interests { grid-template-columns: 1fr; gap: 18px; }
+      .interest-zh { font-size: 18px; }
+      .interest-en { margin-top: 0; }
+      h2 { margin-bottom: 21px; }
+    }
+    @media print {
+      body { background: white; }
+      main { width: 100%; padding: 0; }
+      .links a { border: 0; padding-left: 0; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow" lang="en">Personal homepage</p>
+      <h1 lang="en">Shannon</h1>
+    </header>
+
+    <section aria-labelledby="research-heading">
+      <h2 id="research-heading">研究兴趣<span class="heading-en" lang="en">Research interests</span></h2>
+      <ul class="interests">
+        <li>
+          <span class="interest-zh">机器学习</span>
+          <span class="interest-en" lang="en">Machine Learning</span>
+        </li>
+        <li>
+          <span class="interest-zh">张量计算</span>
+          <span class="interest-en" lang="en">Tensor Computation</span>
+        </li>
+        <li>
+          <span class="interest-zh">流形优化</span>
+          <span class="interest-en" lang="en">Manifold Optimization</span>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="publications-heading">
+      <h2 id="publications-heading">论文<span class="heading-en" lang="en">Publications</span></h2>
+      <article>
+        <h3 lang="en">Proximal Alternating Linearized Minimization Algorithm for Sparse Tensor Train Decomposition</h3>
+        <p class="authors" lang="en">Zhenlong Hu and Zhongming Chen</p>
+        <p class="venue" lang="en"><cite>Statistics, Optimization &amp; Information Computing</cite></p>
+        <p class="publication-meta" lang="en">13(5), 2119–2135 · 2025</p>
+        <div class="links">
+          <a href="https://doi.org/10.19139/soic-2310-5070-2440">论文 / Paper <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/zl-hu/Sparse-Tensor-Train-Decomposition">代码 / Code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
