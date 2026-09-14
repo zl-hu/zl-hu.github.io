@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="zl hu 的个人主页。研究兴趣：机器学习、张量计算、流形优化。">
-  <title>zl hu · 个人主页</title>
+  <meta name="description" content="Academic homepage of zl hu. Research interests: machine learning, tensor computation, and manifold optimization.">
+  <title>zl hu · Academic Homepage</title>
   <style>
     :root {
       --paper: #fcfcfa;
@@ -20,7 +20,7 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 16px;
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
@@ -58,13 +58,6 @@
       font-weight: 600;
       letter-spacing: .02em;
     }
-    .heading-en {
-      margin-left: 12px;
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: .02em;
-    }
     .interests {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -73,13 +66,7 @@
       margin: 0;
       list-style: none;
     }
-    .interest-zh { display: block; font-size: 19px; }
-    .interest-en {
-      display: block;
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 13px;
-    }
+    .interest { display: block; font-size: 18px; }
     h3 {
       max-width: 730px;
       margin: 0 0 12px;
@@ -94,7 +81,6 @@
     .venue { margin: 0; color: var(--muted); font-size: 14px; }
     .publication-meta { margin: 1px 0 0; color: var(--muted); font-size: 13px; }
     .core-idea { margin: 14px 0 0; font-size: 14px; line-height: 1.8; }
-    .core-idea-en { margin-top: 6px; color: var(--muted); }
     .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
     .links a {
       display: inline-flex;
@@ -116,8 +102,6 @@
       header { padding-bottom: 32px; }
       section { padding-top: 25px; padding-bottom: 28px; }
       .interests { grid-template-columns: 1fr; gap: 18px; }
-      .interest-zh { font-size: 18px; }
-      .interest-en { margin-top: 0; }
       h2 { margin-bottom: 21px; }
     }
     @media print {
@@ -131,50 +115,40 @@
 <body>
   <main>
     <header>
-      <p class="eyebrow" lang="en">Personal homepage</p>
-      <h1 lang="en">zl hu</h1>
+      <p class="eyebrow">Academic Homepage</p>
+      <h1>zl hu</h1>
     </header>
 
     <section aria-labelledby="research-heading">
-      <h2 id="research-heading">研究兴趣<span class="heading-en" lang="en">Research interests</span></h2>
+      <h2 id="research-heading">Research Interests</h2>
       <ul class="interests">
-        <li>
-          <span class="interest-zh">机器学习</span>
-          <span class="interest-en" lang="en">Machine Learning</span>
-        </li>
-        <li>
-          <span class="interest-zh">张量计算</span>
-          <span class="interest-en" lang="en">Tensor Computation</span>
-        </li>
-        <li>
-          <span class="interest-zh">流形优化</span>
-          <span class="interest-en" lang="en">Manifold Optimization</span>
-        </li>
+        <li><span class="interest">Machine Learning</span></li>
+        <li><span class="interest">Tensor Computation</span></li>
+        <li><span class="interest">Manifold Optimization</span></li>
       </ul>
     </section>
 
     <section aria-labelledby="publications-heading">
-      <h2 id="publications-heading">论文与预印本<span class="heading-en" lang="en">Publications &amp; preprints</span></h2>
+      <h2 id="publications-heading">Publications &amp; Preprints</h2>
       <article>
-        <h3 lang="en">[LOTT-Q] Low-Rank Tensor Completion using Tensor Train Decomposition via Riemannian Optimization on the Quotient Geometry</h3>
-        <p class="authors" lang="en">Zhenlong Hu, Zhongming Chen, Defeng Sun, and Liping Zhang</p>
-        <p class="venue" lang="en"><cite>arXiv preprint</cite></p>
-        <p class="publication-meta" lang="en">arXiv:2606.30173 · 2026</p>
-        <p class="core-idea" lang="zh-CN"><strong>核心：</strong>通过缩小商群，释放商几何中黎曼度量的选择自由，无需固定采用计算代价高昂的 <span lang="en">full metric</span>。</p>
-        <p class="core-idea core-idea-en" lang="en"><strong>Core:</strong> Reducing the quotient group enables greater flexibility in choosing Riemannian metrics on the quotient geometry, avoiding reliance on the computationally expensive full metric.</p>
+        <h3>[LOTT-Q] Low-Rank Tensor Completion using Tensor Train Decomposition via Riemannian Optimization on the Quotient Geometry</h3>
+        <p class="authors">Zhenlong Hu, Zhongming Chen, Defeng Sun, and Liping Zhang</p>
+        <p class="venue"><cite>arXiv preprint</cite></p>
+        <p class="publication-meta">arXiv:2606.30173 · 2026</p>
+        <p class="core-idea"><strong>Core:</strong> Reducing the quotient group enables greater flexibility in choosing Riemannian metrics on the quotient geometry, avoiding reliance on the computationally expensive full metric.</p>
         <div class="links">
-          <a href="https://arxiv.org/abs/2606.30173" rel="noreferrer">论文 / Paper <span aria-hidden="true">↗</span></a>
+          <a href="https://arxiv.org/abs/2606.30173" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
         </div>
       </article>
 
       <article>
-        <h3 lang="en">Proximal Alternating Linearized Minimization Algorithm for Sparse Tensor Train Decomposition</h3>
-        <p class="authors" lang="en">Zhenlong Hu and Zhongming Chen</p>
-        <p class="venue" lang="en"><cite>Statistics, Optimization &amp; Information Computing</cite></p>
-        <p class="publication-meta" lang="en">13(5), 2119–2135 · 2025</p>
+        <h3>Proximal Alternating Linearized Minimization Algorithm for Sparse Tensor Train Decomposition</h3>
+        <p class="authors">Zhenlong Hu and Zhongming Chen</p>
+        <p class="venue"><cite>Statistics, Optimization &amp; Information Computing</cite></p>
+        <p class="publication-meta">13(5), 2119–2135 · 2025</p>
         <div class="links">
-          <a href="https://doi.org/10.19139/soic-2310-5070-2440">论文 / Paper <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/zl-hu/Sparse-Tensor-Train-Decomposition">代码 / Code <span aria-hidden="true">↗</span></a>
+          <a href="https://doi.org/10.19139/soic-2310-5070-2440">Paper <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/zl-hu/Sparse-Tensor-Train-Decomposition">Code <span aria-hidden="true">↗</span></a>
         </div>
       </article>
     </section>
